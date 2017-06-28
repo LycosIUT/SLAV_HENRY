@@ -7,4 +7,4 @@ class Entity(object):
         self.height = height
 
     def update():
-        print "Entity update"
+        print("Entity update")
