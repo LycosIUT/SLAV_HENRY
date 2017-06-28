@@ -11,5 +11,5 @@ class Item(Entity):
         self.name = name
         self.points = points
 
-    def update():
+    def update(self):
         print("Item update")

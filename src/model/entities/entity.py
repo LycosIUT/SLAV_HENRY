@@ -11,5 +11,5 @@ class Entity(object):
         self.width = width
         self.height = height
 
-    def update():
+    def update(self):
         print("Entity update")

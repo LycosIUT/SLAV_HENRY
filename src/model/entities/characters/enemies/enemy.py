@@ -10,5 +10,4 @@ class Enemy(Character):
         super(Enemy, self).__init__(coords,width,height,maxHealthPoints)
         self.attackPoints = attackPoints
 
-    def attack(self,slav):
-        slav.takeDammages(self.attackPoints)
+    

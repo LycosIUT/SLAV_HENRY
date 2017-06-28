@@ -18,3 +18,6 @@ class Character(Entity):
         self.healthPoints -= dammages
         if self.healthPoints < 0:
             self.healthPoints = 0
+
+    def attack(self,enemy):
+        enemy.takeDammages(self.attackPoints)
