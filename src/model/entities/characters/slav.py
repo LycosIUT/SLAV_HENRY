@@ -8,6 +8,3 @@ class Slav(Character):
     def __init__(self,coords,width,height,maxHealthPoints,attackPoints):
         super(Slav, self).__init__(coords,width,height,maxHealthPoints)
         self.attackPoints = attackPoints
-
-    def attack(self,enemy):
-        enemy.takeDammages(self.attackPoints)
