@@ -9,12 +9,12 @@ class Character(Entity):
         super(Character, self).__init__(coords,width,height)
         self.maxHealthPoints = maxHealthPoints
         self.healthPoints = maxHealthPoints
-        self.touchTop=False
-        self.touchBottom=False
-        self.touchLeft=False
-        self.touchRight=False
+        self.touchTop = False
+        self.touchBottom = False
+        self.touchLeft = False
+        self.touchRight = False
 
     def takeDammages(self,dammages):
-        self.healthPoints-=dammages
+        self.healthPoints -= dammages
         if self.healthPoints < 0:
             self.healthPoints = 0
