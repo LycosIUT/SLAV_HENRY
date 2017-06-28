@@ -21,3 +21,6 @@ class Character(Entity):
 
     def attack(self,enemy):
         enemy.takeDammages(self.attackPoints)
+
+    def isAlive(self):
+        return self.healthPoints > 0
