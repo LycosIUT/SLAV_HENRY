@@ -28,6 +28,14 @@ class Character(Entity):
         self.touchBottom = False
         self.touchLeft = False
         self.touchRight = False
+        self.facingLeft = False;
+        self.dead = False
+
+    def update(self):
+        """
+        Met à jour l'état du Character
+        """
+        self.dead =  (self.healthPoints == 0)
 
     def takeDammages(self,dammages):
         """
@@ -49,11 +57,11 @@ class Character(Entity):
         """
         enemy.takeDammages(self.attackPoints)
 
-    def isAlive(self):
+    def isDead(self):
         """
         Renvoie l'état de vie du Character
 
-        :return: Etat de vie du Character
+        :return: Etat de vie du Character (true = mort, false = vivant)
         :rtype: Boolean
         """
-        return self.healthPoints > 0
+        return self.dead
