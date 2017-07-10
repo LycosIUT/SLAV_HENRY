@@ -15,7 +15,7 @@ class Slav(Character):
         :param height: hauteur du slav
         :param maxHealthPoints: nombre de points de vie maximum du Slav
         :param attackPoints: nombre de point d'attaque du slav
-        :type coord: Coord
+        :type coords: Coord
         :type width: int
         :type height: int
         :type maxHealthPoints: int

@@ -15,7 +15,7 @@ class Enemy(Character):
         :param height: hauteur de l'enemy
         :param maxHealthPoints: nombre de points de vie maximum du Enemy
         :param attackPoints: nombre de point d'attaque de l'enemy
-        :type coord: Coord
+        :type coords: Coord
         :type width: int
         :type height: int
         :type maxHealthPoints: int

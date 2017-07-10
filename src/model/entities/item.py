@@ -15,7 +15,7 @@ class Item(Entity):
         :param height: hauteur de l'item
         :param name: libellé de l'item
         :param points: points que donne de le ramassage de l'item
-        :type coord: Coord
+        :type coords: Coord
         :type width: int
         :type height: int
         :type name: string

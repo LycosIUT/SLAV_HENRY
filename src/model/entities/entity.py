@@ -11,7 +11,7 @@ class Entity(object):
         :param coords: Coordonnées de l'entitité sur le niveau
         :param width: largeur de l'entité
         :param height: hauteur de l'entité
-        :type coord: Coord
+        :type coords: Coord
         :type width: int
         :type height: int
         :return: objet de type Entity
@@ -21,6 +21,7 @@ class Entity(object):
         self.coords = coords
         self.width = width
         self.height = height
+        self.visible = True
 
     def update(self):
         """

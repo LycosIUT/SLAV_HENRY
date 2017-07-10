@@ -11,10 +11,10 @@ class Character(Entity):
         Constructeur de la classe Character
 
         :param coords: Coordonnées du character sur le niveau
-        :param width: largeur de l'character
-        :param height: hauteur de l'character
+        :param width: largeur du character
+        :param height: hauteur du character
         :param maxHealthPoints: nombre de points de vie maximum du Character
-        :type coord: Coord
+        :type coords: Coord
         :type width: int
         :type height: int
         :type maxHealthPoints: int
@@ -29,13 +29,13 @@ class Character(Entity):
         self.touchLeft = False
         self.touchRight = False
         self.facingLeft = False;
-        self.dead = False
+        self.isDead = False
 
     def update(self):
         """
         Met à jour l'état du Character
         """
-        self.dead =  (self.healthPoints == 0)
+        self.isDead =  (self.healthPoints == 0)
 
     def takeDammages(self,dammages):
         """
@@ -56,12 +56,3 @@ class Character(Entity):
         :type enemy: Character
         """
         enemy.takeDammages(self.attackPoints)
-
-    def isDead(self):
-        """
-        Renvoie l'état de vie du Character
-
-        :return: Etat de vie du Character (true = mort, false = vivant)
-        :rtype: Boolean
-        """
-        return self.dead
